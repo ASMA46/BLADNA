@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini projet</title>
+    <link rel="stylesheet" href="acceuil.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" class="logo" alt="logo" width="300" height="300">
+        <h1>BLADNA</h1>
+        <div class="carousel">
+            <div class="slides"> 
+                <img src="Marrakech.jpg" alt="Marrakech"> 
+                <img src="medina%20aga.jpg" alt="medina"> 
+                <img src="desert.jpeg" alt="desert"> 
+                <img src="kech.jpg" alt="kech">
+                <img src="merzouga.jpg" alt="merzouga">
+                <img src="chefchaoun.jpg" alt="chefchaoun">
+                <img src="dakhla.jpg" alt="dakhla">
+                <img src="casa.jpg" alt="casa">
+                <img src="Essaouira.jpg" alt="essaouira">
+                <img src="Agadir-city.jpg" alt="agadir">
+                <img src="Fes.jpg" alt="fes">
+                <img src="mdina.jpg" alt="agadir">
+                <img src="Souk.jpg" alt="agadir">
+                <img src="chefchaoun.jpg" alt="agadir">
+            </div>
+        </div>
+        <nav class="nav">
+            <ul> 
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="voyages.html">Voyages organisés</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bonne expérience!</h2>
+        <section id="articles">
+            <h2>Derniers articles</h2>
+            <article>
+                <h3>Marrakech</h3>
+                <p>Marrakech est bien plus qu'une simple ville, c'est une expérience sensorielle intense. Le tumulte de la place Jemaa el-Fna, les effluves d'épices des souks, les couleurs chatoyantes des riads et la douceur de l'Atlas en toile de fond créent une ambiance unique. Cet article vous invite à plonger au cœur de cette ville ocre et à découvrir ses mille et une facettes.</p>
+                <a href="article1.html">Lire la suite</a>
+                <h3>Agadir</h3>
+                <p>Agadir est une destination qui plaira à tous les types de voyageurs. Que vous soyez à la recherche de farniente, d'aventures ou de découvertes culturelles, vous trouverez votre bonheur dans cette ville dynamique et accueillante.</p>
+                <a href="article2.html">Lire la suite</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 bonne Voyage</p>
+    </footer>
+    <script>
+        // Fonction pour créer un cookie
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        // Fonction pour lire un cookie
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Fonction pour supprimer un cookie
+        function eraseCookie(name) {
+            document.cookie = name + '=; Max-Age=-99999999;';
+        }
+
+        // Exemple d'utilisation
+        setCookie('user', 'John Doe', 7);
+        let user = getCookie('user');
+        console.log(user);  // Affiche "John Doe"
+        eraseCookie('user');
+    </script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #4CAF50;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 28px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header img.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    background-color: #b0ea2f;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Styles pour le carrousel d'images */
+.carousel {
+    width: 106%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: calc(25% * 14);  /* Ajuste la largeur totale pour accueillir toutes les images */
+    animation: slide 20s infinite linear;
+}
+
+.slides img {
+    width: 7%;  /* Ajuste la largeur de chaque image pour qu'elles se distribuent également */
+    height: auto;
+}
+
+/* Animation pour le glissement des images */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    color: #4CAF50;
+}
+
+#articles {
+    color:black;
+    margin-top: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #b0ea2f;
+    color: white;
+    text-align: center;
+    padding: -10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles pour la mise en page, les couleurs, les polices, etc. */
+.container {
+    display: flex;
+}
+
+nav ul {
+list-style-type: none;
+    margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+text-align: center;
+}
+
+nav li {
+  margin: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+}
+
+nav .submenu {
+  display: none;
+  padding-left: 20px;
+}
+
+nav li:hover .submenu {
+  display: block;
+}.excursion {
+    /* Styles pour la section de l'excursion */
+}
+.details {
+    /* Styles pour les détails de l'excursion */
+}
+.option {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.option-details {
+  margin-top: 10px;
+}
+
+.option-details select {
+  width: 100px;
+}
+
+.price {
+  font-weight: bold;
+}
+.reservation-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.reservation-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.reservation-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reservation-form .info {
+  font-size: 12px;
+  color: #888;
+  cursor: help;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.reservation-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.reservation-form .ajouter-panier {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reservation-form .reserver {
+  background-color: #2196F3;
+  color: white;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: linear-gradient(to bottom right, #f2711c, #f9a825);
+}
+
+th, td {
+  border: 1px solid #fff;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+thead {
+  background: rgba(0, 0, 0, 0.2);
+}
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.detail {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: calc(25% - 20px); /* Pour gérer les marges */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.detail img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section */
+section {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#map {
+    height: 500px; /* Ajustez la hauteur selon vos besoins */
+}

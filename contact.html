@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Formulaire de Contact</title>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" class="logo" alt="logo" width="50" height="50">
+        <h1>BLADNA</h1>
+        <div class="carousel">
+            <div class="slides"> 
+                <img src="Marrakech.jpg" alt="Marrakech"> 
+                <img src="medina%20aga.jpg" alt="medina"> 
+                <img src="desert.jpeg" alt="desert"> 
+                <img src="kech.jpg" alt="kech">
+                <img src="merzouga.jpg" alt="merzouga">
+                <img src="chefchaoun.jpg" alt="chefchaoun">
+                <img src="dakhla.jpg" alt="dakhla">
+                <img src="casa.jpg" alt="casa">
+                <img src="Essaouira.jpg" alt="essaouira">
+                <img src="Agadir-city.jpg" alt="agadir">
+            </div>
+        </div>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="voyages.html">Voyages organisés</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contactez-nous</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 bonne Voyage</p>
+    </footer>
+</body>
+</html>

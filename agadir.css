@@ -1,0 +1,120 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #4CAF50;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header img.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    background-color: #86ed2f;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Styles pour le carrousel d'images */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: calc(25% * 14);  /* Ajuste la largeur totale pour accueillir toutes les images */
+    animation: slide 20s infinite linear;
+}
+
+.slides img {
+    width: 7.14%;  /* Ajuste la largeur de chaque image pour qu'elles se distribuent également */
+    height: auto;
+}
+
+/* Animation pour le glissement des images */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+main {
+    padding: 20px;
+    }
+
+
+main h2 {
+    color: black;
+}
+
+main p {
+    color: black; /* Couleur noire pour les paragraphes */
+}
+
+aside {
+    background-color: white;
+    padding: 10px;
+    border-left: 5px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+aside h1, aside h3 {
+    color: #4CAF50;
+}
+
+footer {
+    background-color: #86ed2f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

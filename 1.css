@@ -1,0 +1,190 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #4CAF50;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    background-color: #b0ea2f;
+    overflow: hidden;
+    margin-top: 20px; /* Espace sous le logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Styles pour le carrousel d'images */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0; /* Espace autour du carrousel */
+}
+
+.slides {
+    display: flex;
+    animation: slide 20s infinite linear;
+}
+
+.slides img {
+    min-width: 100%;  /* Ajuste la largeur de chaque image */
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Animation pour le glissement des images */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% * 14));
+    }
+}
+
+/* Styles pour le formulaire */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h3, main p {
+    color: #4CAF50;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #b0ea2f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.excursions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.excursion {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.excursion img {
+  max-width: 100%;
+  height: auto;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.old-price {
+  font-size: 1.2em;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.new-price {
+  margin-top: 5px;
+  font-size: 1.5em;
+  color: red;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
